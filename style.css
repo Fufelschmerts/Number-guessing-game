@@ -1,0 +1,48 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 200px auto;
+}
+
+.para {
+  max-width: 500px;
+}
+
+.form input[type="number"] {
+  width: 200px;
+}
+
+.lastResult {
+  color: white;
+  padding: 3px;
+}
+
+#confetti-container {
+  /* width: 200px; */
+  height: 30px;
+}
+
+
+.confetti {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background-color: #ff0000;
+  pointer-events: none;
+  z-index: 9999;
+  margin-top: 50px;
+  opacity: 0; /* Устанавливаем начальную непрозрачность элемента в 0 */
+  transition: opacity .5s; /* Добавляем переход для свойства opacity продолжительностью 0.5 секунды */
+}
+
+.confetti.show {
+  opacity: 1;
+}
